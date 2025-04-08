@@ -8,13 +8,13 @@
       
       
       
-        <link rel="canonical" href="https://eclipse-cbi.github.io/cbi-website-preview/pr-preview/pr-14/jiro/Common-build-errors/">
+        <link rel="canonical" href="https://eclipse-cbi.github.io/cbi-website-preview/pr-preview/pr-14/jiro/Nexus-OSSRH-Maven-Central/">
       
       
-        <link rel="prev" href="../CI-Best-Practices/">
+        <link rel="prev" href="../GitLab-integration/">
       
       
-        <link rel="next" href="../Dedicated-build-agents/">
+        <link rel="next" href="../Resource-packs-and-quotas/">
       
       
         <link rel="alternate" type="application/rss+xml" title="RSS feed" href="../../feed_rss_created.xml">
@@ -25,7 +25,7 @@
     
     
       
-        <title>Common build errors - Eclipse Common Build Infrastructure PREVIEW 🚀</title>
+        <title>Nexus \ OSSRH \ Maven Central - Eclipse Common Build Infrastructure PREVIEW 🚀</title>
       
     
     
@@ -70,11 +70,11 @@
       
         <meta  property="og:type"  content="website" >
       
-        <meta  property="og:title"  content="Common build errors - Eclipse Common Build Infrastructure PREVIEW 🚀" >
+        <meta  property="og:title"  content="Nexus \ OSSRH \ Maven Central - Eclipse Common Build Infrastructure PREVIEW 🚀" >
       
         <meta  property="og:description"  content="None" >
       
-        <meta  property="og:image"  content="https://eclipse-cbi.github.io/cbi-website-preview/pr-preview/pr-14/assets/images/social/jiro/Common-build-errors.png" >
+        <meta  property="og:image"  content="https://eclipse-cbi.github.io/cbi-website-preview/pr-preview/pr-14/assets/images/social/jiro/Nexus-OSSRH-Maven-Central.png" >
       
         <meta  property="og:image:type"  content="image/png" >
       
@@ -82,15 +82,15 @@
       
         <meta  property="og:image:height"  content="630" >
       
-        <meta  property="og:url"  content="https://eclipse-cbi.github.io/cbi-website-preview/pr-preview/pr-14/jiro/Common-build-errors/" >
+        <meta  property="og:url"  content="https://eclipse-cbi.github.io/cbi-website-preview/pr-preview/pr-14/jiro/Nexus-OSSRH-Maven-Central/" >
       
         <meta  name="twitter:card"  content="summary_large_image" >
       
-        <meta  name="twitter:title"  content="Common build errors - Eclipse Common Build Infrastructure PREVIEW 🚀" >
+        <meta  name="twitter:title"  content="Nexus \ OSSRH \ Maven Central - Eclipse Common Build Infrastructure PREVIEW 🚀" >
       
         <meta  name="twitter:description"  content="None" >
       
-        <meta  name="twitter:image"  content="https://eclipse-cbi.github.io/cbi-website-preview/pr-preview/pr-14/assets/images/social/jiro/Common-build-errors.png" >
+        <meta  name="twitter:image"  content="https://eclipse-cbi.github.io/cbi-website-preview/pr-preview/pr-14/assets/images/social/jiro/Nexus-OSSRH-Maven-Central.png" >
       
     
     
@@ -106,7 +106,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#what-is-killing-my-build-im-using-custom-containers" class="md-skip">
+        <a href="#custom-container-on-jiro" class="md-skip">
           Skip to content
         </a>
       
@@ -141,7 +141,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Common build errors
+              Nexus \ OSSRH \ Maven Central
             
           </span>
         </div>
@@ -592,19 +592,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../Common-build-errors/" class="md-nav__link">
         
   
   
@@ -615,7 +606,6 @@
   
 
       </a>
-      
     </li>
   
 
@@ -740,10 +730,30 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../Nexus-OSSRH-Maven-Central/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Nexus \ OSSRH \ Maven Central
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -754,6 +764,126 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#custom-container-on-jiro" class="md-nav__link">
+    <span class="md-ellipsis">
+      Custom container on Jiro
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-can-artifacts-be-deployed-to-nexus-oss-repoeclipseorg" class="md-nav__link">
+    <span class="md-ellipsis">
+      How can artifacts be deployed to Nexus OSS (repo.eclipse.org)?
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="How can artifacts be deployed to Nexus OSS (repo.eclipse.org)?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#custom-container-on-jiro_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Custom container on Jiro
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-can-artifacts-be-deployed-to-ossrh-maven-central" class="md-nav__link">
+    <span class="md-ellipsis">
+      How can artifacts be deployed to OSSRH / Maven Central?
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="How can artifacts be deployed to OSSRH / Maven Central?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#required-steps-for-a-freestyle-job" class="md-nav__link">
+    <span class="md-ellipsis">
+      Required steps for a freestyle job
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#required-steps-for-a-pipeline-job" class="md-nav__link">
+    <span class="md-ellipsis">
+      Required steps for a pipeline job
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#custom-container-on-jiro_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Custom container on Jiro
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#common-issues-with-gpg" class="md-nav__link">
+    <span class="md-ellipsis">
+      Common issues with GPG
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#signing-with-gradle" class="md-nav__link">
+    <span class="md-ellipsis">
+      Signing with Gradle
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-can-artifacts-be-released-from-ossrh-to-maven-central" class="md-nav__link">
+    <span class="md-ellipsis">
+      How can artifacts be released from OSSRH to Maven Central?
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -3451,8 +3581,116 @@
   
   
   
-    
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#custom-container-on-jiro" class="md-nav__link">
+    <span class="md-ellipsis">
+      Custom container on Jiro
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-can-artifacts-be-deployed-to-nexus-oss-repoeclipseorg" class="md-nav__link">
+    <span class="md-ellipsis">
+      How can artifacts be deployed to Nexus OSS (repo.eclipse.org)?
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="How can artifacts be deployed to Nexus OSS (repo.eclipse.org)?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#custom-container-on-jiro_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Custom container on Jiro
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-can-artifacts-be-deployed-to-ossrh-maven-central" class="md-nav__link">
+    <span class="md-ellipsis">
+      How can artifacts be deployed to OSSRH / Maven Central?
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="How can artifacts be deployed to OSSRH / Maven Central?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#required-steps-for-a-freestyle-job" class="md-nav__link">
+    <span class="md-ellipsis">
+      Required steps for a freestyle job
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#required-steps-for-a-pipeline-job" class="md-nav__link">
+    <span class="md-ellipsis">
+      Required steps for a pipeline job
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#custom-container-on-jiro_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Custom container on Jiro
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#common-issues-with-gpg" class="md-nav__link">
+    <span class="md-ellipsis">
+      Common issues with GPG
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#signing-with-gradle" class="md-nav__link">
+    <span class="md-ellipsis">
+      Signing with Gradle
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-can-artifacts-be-released-from-ossrh-to-maven-central" class="md-nav__link">
+    <span class="md-ellipsis">
+      How can artifacts be released from OSSRH to Maven Central?
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -3471,15 +3709,19 @@
 
 
 
-<p>On our cluster-based infrastructure, all build executors/agents/pods (except on dedicated agents) are dynamically spun up. This usually takes a little while. Therefore, the build executor status panel might show something like
-* "(pending—Waiting for next available executor)" or
-* "my-agent-abcd123 is offline or suspended"
-for a few seconds, before the build starts. We've opened <a href="https://issues.jenkins-ci.org/browse/JENKINS-56307">a ticket with a suggestion on the Jenkins project</a> to accelerate the provisioning process. Feel free to vote on this issue if you feel it is important for you.</p>
-<p>If such a message is shown for more than ~5 minutes, you can safely assume that something is wrong with the pod/container config. For example: a docker image can't be found because there is a typo in the name or the tag was wrong.</p>
-<h1 id="what-is-killing-my-build-im-using-custom-containers">What is killing my build? I'm using custom containers!</h1>
-<p>A good indicator that your build is aborted due to an OutOfMemory error is the word "Killed" appearing in the console logs.</p>
-<p>First, please get familiarized with how <a href="https://kubernetes.io/docs/tasks/configure-pod-container/assign-memory-resource/">Kubernetes assigns memory resources to containers and pods</a></p>
-<p>Then, you should know that, as soon as you run your build in a custom Kubernetes agent, Jenkins adds a container named "jnlp" that will handle the connection between the pod agent and the master. The resources assigned to this "jnlp" container come from a default values we set for you. Because we know the "jnlp" container does not use need of CPU and memory, we set the default values for all containers to low values (about 512 MiB and 0.25 vCPU). This way, we're sure that the "jnlp" container won't uselessly consume too many resources that are allocated to your project. But this has the negative effect that, if you don't effectively specify the resources requests and limits in your pod template, your custom containers will also inherit those values (which are probably too low for you). To overcome the issue, you need to specify those values in your pod template like:</p>
+  <h1>Nexus \ OSSRH \ Maven Central</h1>
+
+<p>Every JIPP has a Maven settings file set up that specifies our <a href="https://repo.eclipse.org">local Nexus instance</a> as cache for Maven Central.</p>
+<blockquote>
+<p>[!IMPORTANT]
+In <a href="https://github.com/eclipse-cbi/jiro">Jiro</a> this works out of the box for the default pod templates. No additional configuration is required for Freestyle and Pipeline jobs. For custom containers, see the following section.</p>
+</blockquote>
+<h3 id="custom-container-on-jiro">Custom container on Jiro</h3>
+<p>You need to add the <code>settings-xml</code> volume, as shown below. Please note, the <code>m2-repo</code> volume is required as well, otherwise <code>/home/jenkins/.m2/repository</code> is not writable.</p>
+<blockquote>
+<p>[!NOTE]
+In custom containers the <code>user.home</code> environment variable needs to be set to <code>/home/jenkins</code> via MAVEN_OPTS, otherwise <code>settings.xml</code> and <code>settings-security.xml</code> can not be found.</p>
+</blockquote>
 <div class="language-groovy highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">pipeline</span><span class="w"> </span><span class="o">{</span>
 </span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="w">  </span><span class="n">agent</span><span class="w"> </span><span class="o">{</span>
 </span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="w">    </span><span class="n">kubernetes</span><span class="w"> </span><span class="o">{</span>
@@ -3491,130 +3733,364 @@ for a few seconds, before the build starts. We've opened <a href="https://issues
 </span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="s2">  containers:</span>
 </span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="s2">  - name: maven</span>
 </span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a><span class="s2">    image: maven:alpine</span>
-</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a><span class="s2">    command:</span>
-</span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a><span class="s2">    - cat</span>
-</span><span id="__span-0-14"><a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a><span class="s2">    tty: true</span>
-</span><span id="__span-0-15"><a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a><span class="s2">    resources:</span>
-</span><span id="__span-0-16"><a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a><span class="s2">      limits:</span>
-</span><span id="__span-0-17"><a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a><span class="s2">        memory: &quot;2Gi&quot;</span>
-</span><span id="__span-0-18"><a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a><span class="s2">        cpu: &quot;1&quot;</span>
-</span><span id="__span-0-19"><a id="__codelineno-0-19" name="__codelineno-0-19" href="#__codelineno-0-19"></a><span class="s2">      requests:</span>
-</span><span id="__span-0-20"><a id="__codelineno-0-20" name="__codelineno-0-20" href="#__codelineno-0-20"></a><span class="s2">        memory: &quot;2Gi&quot;</span>
-</span><span id="__span-0-21"><a id="__codelineno-0-21" name="__codelineno-0-21" href="#__codelineno-0-21"></a><span class="s2">        cpu: &quot;1&quot;</span>
-</span><span id="__span-0-22"><a id="__codelineno-0-22" name="__codelineno-0-22" href="#__codelineno-0-22"></a><span class="s2">&quot;&quot;&quot;</span>
-</span><span id="__span-0-23"><a id="__codelineno-0-23" name="__codelineno-0-23" href="#__codelineno-0-23"></a><span class="w">    </span><span class="o">}</span>
-</span><span id="__span-0-24"><a id="__codelineno-0-24" name="__codelineno-0-24" href="#__codelineno-0-24"></a><span class="w">  </span><span class="o">}</span>
-</span><span id="__span-0-25"><a id="__codelineno-0-25" name="__codelineno-0-25" href="#__codelineno-0-25"></a><span class="w">  </span><span class="n">stages</span><span class="w"> </span><span class="o">{</span>
-</span><span id="__span-0-26"><a id="__codelineno-0-26" name="__codelineno-0-26" href="#__codelineno-0-26"></a><span class="w">    </span><span class="n">stage</span><span class="o">(</span><span class="s1">&#39;Run maven&#39;</span><span class="o">)</span><span class="w"> </span><span class="o">{</span>
-</span><span id="__span-0-27"><a id="__codelineno-0-27" name="__codelineno-0-27" href="#__codelineno-0-27"></a><span class="w">      </span><span class="n">steps</span><span class="w"> </span><span class="o">{</span>
-</span><span id="__span-0-28"><a id="__codelineno-0-28" name="__codelineno-0-28" href="#__codelineno-0-28"></a><span class="w">        </span><span class="n">container</span><span class="o">(</span><span class="s1">&#39;maven&#39;</span><span class="o">)</span><span class="w"> </span><span class="o">{</span>
-</span><span id="__span-0-29"><a id="__codelineno-0-29" name="__codelineno-0-29" href="#__codelineno-0-29"></a><span class="w">          </span><span class="n">sh</span><span class="w"> </span><span class="s1">&#39;mvn -version&#39;</span>
-</span><span id="__span-0-30"><a id="__codelineno-0-30" name="__codelineno-0-30" href="#__codelineno-0-30"></a><span class="w">        </span><span class="o">}</span>
-</span><span id="__span-0-31"><a id="__codelineno-0-31" name="__codelineno-0-31" href="#__codelineno-0-31"></a><span class="w">      </span><span class="o">}</span>
-</span><span id="__span-0-32"><a id="__codelineno-0-32" name="__codelineno-0-32" href="#__codelineno-0-32"></a><span class="w">    </span><span class="o">}</span>
-</span><span id="__span-0-33"><a id="__codelineno-0-33" name="__codelineno-0-33" href="#__codelineno-0-33"></a><span class="w">  </span><span class="o">}</span>
-</span><span id="__span-0-34"><a id="__codelineno-0-34" name="__codelineno-0-34" href="#__codelineno-0-34"></a><span class="o">}</span>
+</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a><span class="s2">    tty: true</span>
+</span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a><span class="s2">    command:</span>
+</span><span id="__span-0-14"><a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a><span class="s2">    - cat</span>
+</span><span id="__span-0-15"><a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a><span class="s2">    env:</span>
+</span><span id="__span-0-16"><a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a><span class="s2">    - name: &quot;MAVEN_OPTS&quot;</span>
+</span><span id="__span-0-17"><a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a><span class="s2">      value: &quot;-Duser.home=/home/jenkins&quot;</span>
+</span><span id="__span-0-18"><a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a><span class="s2">    volumeMounts:</span>
+</span><span id="__span-0-19"><a id="__codelineno-0-19" name="__codelineno-0-19" href="#__codelineno-0-19"></a><span class="s2">    - name: settings-xml</span>
+</span><span id="__span-0-20"><a id="__codelineno-0-20" name="__codelineno-0-20" href="#__codelineno-0-20"></a><span class="s2">      mountPath: /home/jenkins/.m2/settings.xml</span>
+</span><span id="__span-0-21"><a id="__codelineno-0-21" name="__codelineno-0-21" href="#__codelineno-0-21"></a><span class="s2">      subPath: settings.xml</span>
+</span><span id="__span-0-22"><a id="__codelineno-0-22" name="__codelineno-0-22" href="#__codelineno-0-22"></a><span class="s2">      readOnly: true</span>
+</span><span id="__span-0-23"><a id="__codelineno-0-23" name="__codelineno-0-23" href="#__codelineno-0-23"></a><span class="s2">    - name: m2-repo</span>
+</span><span id="__span-0-24"><a id="__codelineno-0-24" name="__codelineno-0-24" href="#__codelineno-0-24"></a><span class="s2">      mountPath: /home/jenkins/.m2/repository</span>
+</span><span id="__span-0-25"><a id="__codelineno-0-25" name="__codelineno-0-25" href="#__codelineno-0-25"></a><span class="s2">  volumes:</span>
+</span><span id="__span-0-26"><a id="__codelineno-0-26" name="__codelineno-0-26" href="#__codelineno-0-26"></a><span class="s2">  - name: settings-xml</span>
+</span><span id="__span-0-27"><a id="__codelineno-0-27" name="__codelineno-0-27" href="#__codelineno-0-27"></a><span class="s2">    secret:</span>
+</span><span id="__span-0-28"><a id="__codelineno-0-28" name="__codelineno-0-28" href="#__codelineno-0-28"></a><span class="s2">      secretName: m2-secret-dir</span>
+</span><span id="__span-0-29"><a id="__codelineno-0-29" name="__codelineno-0-29" href="#__codelineno-0-29"></a><span class="s2">      items:</span>
+</span><span id="__span-0-30"><a id="__codelineno-0-30" name="__codelineno-0-30" href="#__codelineno-0-30"></a><span class="s2">      - key: settings.xml</span>
+</span><span id="__span-0-31"><a id="__codelineno-0-31" name="__codelineno-0-31" href="#__codelineno-0-31"></a><span class="s2">        path: settings.xml</span>
+</span><span id="__span-0-32"><a id="__codelineno-0-32" name="__codelineno-0-32" href="#__codelineno-0-32"></a><span class="s2">  - name: m2-repo</span>
+</span><span id="__span-0-33"><a id="__codelineno-0-33" name="__codelineno-0-33" href="#__codelineno-0-33"></a><span class="s2">    emptyDir: {}</span>
+</span><span id="__span-0-34"><a id="__codelineno-0-34" name="__codelineno-0-34" href="#__codelineno-0-34"></a><span class="s2">&quot;&quot;&quot;</span>
+</span><span id="__span-0-35"><a id="__codelineno-0-35" name="__codelineno-0-35" href="#__codelineno-0-35"></a><span class="w">    </span><span class="o">}</span>
+</span><span id="__span-0-36"><a id="__codelineno-0-36" name="__codelineno-0-36" href="#__codelineno-0-36"></a><span class="w">  </span><span class="o">}</span>
+</span><span id="__span-0-37"><a id="__codelineno-0-37" name="__codelineno-0-37" href="#__codelineno-0-37"></a><span class="w">  </span><span class="n">stages</span><span class="w"> </span><span class="o">{</span>
+</span><span id="__span-0-38"><a id="__codelineno-0-38" name="__codelineno-0-38" href="#__codelineno-0-38"></a><span class="w">    </span><span class="n">stage</span><span class="o">(</span><span class="s1">&#39;Run maven&#39;</span><span class="o">)</span><span class="w"> </span><span class="o">{</span>
+</span><span id="__span-0-39"><a id="__codelineno-0-39" name="__codelineno-0-39" href="#__codelineno-0-39"></a><span class="w">      </span><span class="n">steps</span><span class="w"> </span><span class="o">{</span>
+</span><span id="__span-0-40"><a id="__codelineno-0-40" name="__codelineno-0-40" href="#__codelineno-0-40"></a><span class="w">        </span><span class="n">container</span><span class="o">(</span><span class="s1">&#39;maven&#39;</span><span class="o">)</span><span class="w"> </span><span class="o">{</span>
+</span><span id="__span-0-41"><a id="__codelineno-0-41" name="__codelineno-0-41" href="#__codelineno-0-41"></a><span class="w">          </span><span class="n">sh</span><span class="w"> </span><span class="s1">&#39;mvn -version&#39;</span>
+</span><span id="__span-0-42"><a id="__codelineno-0-42" name="__codelineno-0-42" href="#__codelineno-0-42"></a><span class="w">        </span><span class="o">}</span>
+</span><span id="__span-0-43"><a id="__codelineno-0-43" name="__codelineno-0-43" href="#__codelineno-0-43"></a><span class="w">      </span><span class="o">}</span>
+</span><span id="__span-0-44"><a id="__codelineno-0-44" name="__codelineno-0-44" href="#__codelineno-0-44"></a><span class="w">    </span><span class="o">}</span>
+</span><span id="__span-0-45"><a id="__codelineno-0-45" name="__codelineno-0-45" href="#__codelineno-0-45"></a><span class="w">  </span><span class="o">}</span>
+</span><span id="__span-0-46"><a id="__codelineno-0-46" name="__codelineno-0-46" href="#__codelineno-0-46"></a><span class="o">}</span>
 </span></code></pre></div>
-<p>Note that if you run multiple containers, you need to specify the limits for each. </p>
-<p>We plan to develop some tooling to automatically inject correct default values for your custom containers depending on the resource quotas and the concurrency level (i.e. how many agents can run at once) assigned to your project <a href="https://github.com/eclipse-cbi/jiro/issues/20">GitHub Issue #20</a>.</p>
-<h1 id="my-build-fails-with-fatal-cannot-run-program-xvnc-what-do-i-need-to-do">My build fails with: 'FATAL: Cannot run program "Xvnc"', what do I need to do?</h1>
-<p>You are most likely running UI tests that require a desktop environment and a VNC server. The default pod template (<code>basic</code>) does not provide such an environment. Therefore, you will need to use a different pod template or a custom docker image.</p>
-<p><strong>The Ubuntu pod templates (labels: "ubuntu-2204", "ubuntu-2404", "ubuntu-latest") can be used for UI tests.</strong></p>
-<p>See <a href="https://github.com/eclipse-cbi/jiro/wiki/FAQ#how-do-i-run-ui-tests-on-the-cluster-based-infrastructure">How do I run UI tests on the cluster-based infrastructure?</a> on how the pod template can be used with freestyle or pipeline jobs.</p>
-<h1 id="my-build-fails-with-error-unrecognized-vm-option-usecontainersupport-what-do-i-need-to-do">My build fails with: "[ERROR] Unrecognized VM option '+UseContainerSupport'", what do I need to do?</h1>
-<p>Your build is still running with a JDK &lt; 8 (e.g. JDK 6). <strong>Since these are ancient and unsupported JDKs, we urge you to switch to a more recent JDK, at least JDK 8.</strong>
-If that's not immediately possible - for reasons - you will need to use the following workaround:</p>
-<p>Unset the environment variables "JAVA_TOOL_OPTIONS" and "_JAVA_OPTIONS" by creating two string build parameters with the those names:
-1. In the Jenkins job configuration, select "This project is parameterized"
-2. Add parameter -&gt; String parameter
-3. Set name "JAVA_TOOL_OPTIONS"
-4. Leave default value empty
-5. Repeat 2.-4. for "_JAVA_OPTIONS"</p>
-<h1 id="my-build-fails-with-no-user-exists-for-uid-1000100000-whats-the-issue">My build fails with "No user exists for uid 1000100000", what's the issue?</h1>
-<p>First, you need to know that we run containers using an arbitrarily assigned user ID (1000100000) in our OpenShift cluster. This is for security reasons.</p>
-<p>Unfortunately, most of the images you can find on DockerHub (including official images) do not support running as an arbitrary user. Actually, most of them expect to run as root, which is definitely a <a href="https://medium.com/@mccode/processes-in-containers-should-not-run-as-root-2feae3f0df3b">bad practice</a>. See also <a href="https://github.com/eclipse-cbi/jiro/wiki/FAQ#how-can-i-run-my-build-in-a-container-with-root-privileges">How can I run my build in a container with root privileges?</a></p>
-<p>Moreover, some programs like <code>ssh</code> search for a mapping between the user ID (1000100000) and a username on the system (here a container). It's very rare that any container anticipates this need and actually created a user with ID=1000100000. To avoid this error, you need to customize the image. OpenShift publishes <a href="https://docs.openshift.com/container-platform/3.9/creating_images/guidelines.html">guidelines with best practices</a> about how to create Docker images. More specifically, see the section about how to <a href="https://docs.openshift.com/container-platform/3.9/creating_images/guidelines.html#use-uid">support running with arbitrary user ID</a>.</p>
-<p>To make your image call <code>uid_entrypoint</code> as listed in the link above, you will need to add it to the command directive in the pod template, e.g.:</p>
+<h2 id="how-can-artifacts-be-deployed-to-nexus-oss-repoeclipseorg">How can artifacts be deployed to Nexus OSS (repo.eclipse.org)?</h2>
+<p>If your project does not have its own repo on Nexus yet, then <a href="https://gitlab.eclipse.org/eclipsefdn/helpdesk/-/issues/new">open a HelpDesk issue</a> and specify what project you'd like a Nexus repo for.</p>
+<p>If your project does have its own repo on Nexus already, then you can use Maven (or Gradle) to <a href="https://github.com/eclipse-cbi/cbi/wiki/Nexus#deploying-artifacts-to-repoeclipseorg">deploy artifacts to repo.eclipse.org</a>.</p>
+<blockquote>
+<p>[!NOTE]
+On our cluster-based infra (Jiro), a separate Maven settings file for deployment to Nexus is not required. All information is contained in the default Maven settings file located at <code>/home/jenkins/.m2/settings.xml</code>, which does not need to be specified explicitly in your job configuration.</p>
+</blockquote>
+<h3 id="custom-container-on-jiro_1">Custom container on Jiro</h3>
+<p>You need to add the <code>settings-xml</code> volume, as shown below. Please note, the <code>m2-repo</code> volume is required as well, otherwise <code>/home/jenkins/.m2/repository is not writable</code>.</p>
+<blockquote>
+<p>[!NOTE]
+In custom containers the <code>user.home</code> environment variable needs to be set to <code>/home/jenkins</code> via MAVEN_OPTS, otherwise <code>settings.xml</code> and <code>settings-security.xml</code> can not be found.</p>
+</blockquote>
 <div class="language-groovy highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="n">pipeline</span><span class="w"> </span><span class="o">{</span>
 </span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="w">  </span><span class="n">agent</span><span class="w"> </span><span class="o">{</span>
 </span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="w">    </span><span class="n">kubernetes</span><span class="w"> </span><span class="o">{</span>
-</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="w">      </span><span class="n">label</span><span class="w"> </span><span class="s1">&#39;my-pod&#39;</span>
-</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="w">      </span><span class="n">yaml</span><span class="w"> </span><span class="o">**</span>
-</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="nl">apiVersion:</span><span class="w"> </span><span class="n">v1</span>
-</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="nl">kind:</span><span class="w"> </span><span class="n">Pod</span>
-</span><span id="__span-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a><span class="nl">spec:</span>
-</span><span id="__span-1-9"><a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a><span class="w">  </span><span class="nl">containers:</span>
-</span><span id="__span-1-10"><a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a><span class="w">  </span><span class="o">-</span><span class="w"> </span><span class="nl">name:</span><span class="w"> </span><span class="n">custom</span><span class="o">-</span><span class="n">container</span>
-</span><span id="__span-1-11"><a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a><span class="w">    </span><span class="nl">image:</span><span class="w"> </span><span class="s1">&#39;custom/image&#39;</span>
-</span><span id="__span-1-12"><a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a><span class="w">    </span><span class="nl">command:</span><span class="w"> </span><span class="o">[</span><span class="w"> </span><span class="s2">&quot;/usr/local/bin/uid_entrypoint&quot;</span><span class="w"> </span><span class="o">]</span>
-</span><span id="__span-1-13"><a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a><span class="w">    </span><span class="nl">args:</span><span class="w"> </span><span class="o">[</span><span class="w"> </span><span class="s2">&quot;cat&quot;</span><span class="w"> </span><span class="o">]</span>
-</span><span id="__span-1-14"><a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a><span class="w">    </span><span class="nl">tty:</span><span class="w"> </span><span class="kc">true</span>
-</span><span id="__span-1-15"><a id="__codelineno-1-15" name="__codelineno-1-15" href="#__codelineno-1-15"></a><span class="o">**</span>
-</span><span id="__span-1-16"><a id="__codelineno-1-16" name="__codelineno-1-16" href="#__codelineno-1-16"></a><span class="w">    </span><span class="o">}</span>
-</span><span id="__span-1-17"><a id="__codelineno-1-17" name="__codelineno-1-17" href="#__codelineno-1-17"></a><span class="w">  </span><span class="o">}</span>
-</span><span id="__span-1-18"><a id="__codelineno-1-18" name="__codelineno-1-18" href="#__codelineno-1-18"></a><span class="w">  </span><span class="n">stages</span><span class="w"> </span><span class="o">{</span>
-</span><span id="__span-1-19"><a id="__codelineno-1-19" name="__codelineno-1-19" href="#__codelineno-1-19"></a><span class="w">    </span><span class="n">stage</span><span class="o">(</span><span class="s1">&#39;Stage 1&#39;</span><span class="o">)</span><span class="w"> </span><span class="o">{</span>
-</span><span id="__span-1-20"><a id="__codelineno-1-20" name="__codelineno-1-20" href="#__codelineno-1-20"></a><span class="w">      </span><span class="n">steps</span><span class="w"> </span><span class="o">{</span>
-</span><span id="__span-1-21"><a id="__codelineno-1-21" name="__codelineno-1-21" href="#__codelineno-1-21"></a><span class="w">        </span><span class="n">container</span><span class="o">(</span><span class="s1">&#39;custom-container&#39;</span><span class="o">)</span><span class="w"> </span><span class="o">{</span>
-</span><span id="__span-1-22"><a id="__codelineno-1-22" name="__codelineno-1-22" href="#__codelineno-1-22"></a><span class="w">          </span><span class="n">sh</span><span class="w"> </span><span class="s1">&#39;whoami&#39;</span>
-</span><span id="__span-1-23"><a id="__codelineno-1-23" name="__codelineno-1-23" href="#__codelineno-1-23"></a><span class="w">        </span><span class="o">}</span>
-</span><span id="__span-1-24"><a id="__codelineno-1-24" name="__codelineno-1-24" href="#__codelineno-1-24"></a><span class="w">      </span><span class="o">}</span>
-</span><span id="__span-1-25"><a id="__codelineno-1-25" name="__codelineno-1-25" href="#__codelineno-1-25"></a><span class="w">    </span><span class="o">}</span>
-</span><span id="__span-1-26"><a id="__codelineno-1-26" name="__codelineno-1-26" href="#__codelineno-1-26"></a><span class="w">  </span><span class="o">}</span>
-</span><span id="__span-1-27"><a id="__codelineno-1-27" name="__codelineno-1-27" href="#__codelineno-1-27"></a><span class="o">}</span>
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="w">      </span><span class="n">label</span><span class="w"> </span><span class="s1">&#39;my-agent-pod&#39;</span>
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="w">      </span><span class="n">yaml</span><span class="w"> </span><span class="s2">&quot;&quot;&quot;</span>
+</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="s2">apiVersion: v1</span>
+</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="s2">kind: Pod</span>
+</span><span id="__span-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a><span class="s2">spec:</span>
+</span><span id="__span-1-9"><a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a><span class="s2">  containers:</span>
+</span><span id="__span-1-10"><a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a><span class="s2">  - name: maven</span>
+</span><span id="__span-1-11"><a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a><span class="s2">    image: maven:alpine</span>
+</span><span id="__span-1-12"><a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a><span class="s2">    tty: true</span>
+</span><span id="__span-1-13"><a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a><span class="s2">    command:</span>
+</span><span id="__span-1-14"><a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a><span class="s2">    - cat</span>
+</span><span id="__span-1-15"><a id="__codelineno-1-15" name="__codelineno-1-15" href="#__codelineno-1-15"></a><span class="s2">    env:</span>
+</span><span id="__span-1-16"><a id="__codelineno-1-16" name="__codelineno-1-16" href="#__codelineno-1-16"></a><span class="s2">    - name: &quot;MAVEN_OPTS&quot;</span>
+</span><span id="__span-1-17"><a id="__codelineno-1-17" name="__codelineno-1-17" href="#__codelineno-1-17"></a><span class="s2">      value: &quot;-Duser.home=/home/jenkins&quot;</span>
+</span><span id="__span-1-18"><a id="__codelineno-1-18" name="__codelineno-1-18" href="#__codelineno-1-18"></a><span class="s2">    volumeMounts:</span>
+</span><span id="__span-1-19"><a id="__codelineno-1-19" name="__codelineno-1-19" href="#__codelineno-1-19"></a><span class="s2">    - name: settings-xml</span>
+</span><span id="__span-1-20"><a id="__codelineno-1-20" name="__codelineno-1-20" href="#__codelineno-1-20"></a><span class="s2">      mountPath: /home/jenkins/.m2/settings.xml</span>
+</span><span id="__span-1-21"><a id="__codelineno-1-21" name="__codelineno-1-21" href="#__codelineno-1-21"></a><span class="s2">      subPath: settings.xml</span>
+</span><span id="__span-1-22"><a id="__codelineno-1-22" name="__codelineno-1-22" href="#__codelineno-1-22"></a><span class="s2">      readOnly: true</span>
+</span><span id="__span-1-23"><a id="__codelineno-1-23" name="__codelineno-1-23" href="#__codelineno-1-23"></a><span class="s2">    - name: settings-security-xml</span>
+</span><span id="__span-1-24"><a id="__codelineno-1-24" name="__codelineno-1-24" href="#__codelineno-1-24"></a><span class="s2">      mountPath: /home/jenkins/.m2/settings-security.xml</span>
+</span><span id="__span-1-25"><a id="__codelineno-1-25" name="__codelineno-1-25" href="#__codelineno-1-25"></a><span class="s2">      subPath: settings-security.xml</span>
+</span><span id="__span-1-26"><a id="__codelineno-1-26" name="__codelineno-1-26" href="#__codelineno-1-26"></a><span class="s2">      readOnly: true</span>
+</span><span id="__span-1-27"><a id="__codelineno-1-27" name="__codelineno-1-27" href="#__codelineno-1-27"></a><span class="s2">    - name: m2-repo</span>
+</span><span id="__span-1-28"><a id="__codelineno-1-28" name="__codelineno-1-28" href="#__codelineno-1-28"></a><span class="s2">      mountPath: /home/jenkins/.m2/repository</span>
+</span><span id="__span-1-29"><a id="__codelineno-1-29" name="__codelineno-1-29" href="#__codelineno-1-29"></a><span class="s2">  volumes:</span>
+</span><span id="__span-1-30"><a id="__codelineno-1-30" name="__codelineno-1-30" href="#__codelineno-1-30"></a><span class="s2">  - name: settings-xml</span>
+</span><span id="__span-1-31"><a id="__codelineno-1-31" name="__codelineno-1-31" href="#__codelineno-1-31"></a><span class="s2">    secret:</span>
+</span><span id="__span-1-32"><a id="__codelineno-1-32" name="__codelineno-1-32" href="#__codelineno-1-32"></a><span class="s2">      secretName: m2-secret-dir</span>
+</span><span id="__span-1-33"><a id="__codelineno-1-33" name="__codelineno-1-33" href="#__codelineno-1-33"></a><span class="s2">      items:</span>
+</span><span id="__span-1-34"><a id="__codelineno-1-34" name="__codelineno-1-34" href="#__codelineno-1-34"></a><span class="s2">      - key: settings.xml</span>
+</span><span id="__span-1-35"><a id="__codelineno-1-35" name="__codelineno-1-35" href="#__codelineno-1-35"></a><span class="s2">        path: settings.xml</span>
+</span><span id="__span-1-36"><a id="__codelineno-1-36" name="__codelineno-1-36" href="#__codelineno-1-36"></a><span class="s2">  - name: settings-security-xml</span>
+</span><span id="__span-1-37"><a id="__codelineno-1-37" name="__codelineno-1-37" href="#__codelineno-1-37"></a><span class="s2">    secret:</span>
+</span><span id="__span-1-38"><a id="__codelineno-1-38" name="__codelineno-1-38" href="#__codelineno-1-38"></a><span class="s2">      secretName: m2-secret-dir</span>
+</span><span id="__span-1-39"><a id="__codelineno-1-39" name="__codelineno-1-39" href="#__codelineno-1-39"></a><span class="s2">      items:</span>
+</span><span id="__span-1-40"><a id="__codelineno-1-40" name="__codelineno-1-40" href="#__codelineno-1-40"></a><span class="s2">      - key: settings-security.xml</span>
+</span><span id="__span-1-41"><a id="__codelineno-1-41" name="__codelineno-1-41" href="#__codelineno-1-41"></a><span class="s2">        path: settings-security.xml</span>
+</span><span id="__span-1-42"><a id="__codelineno-1-42" name="__codelineno-1-42" href="#__codelineno-1-42"></a><span class="s2">  - name: m2-repo</span>
+</span><span id="__span-1-43"><a id="__codelineno-1-43" name="__codelineno-1-43" href="#__codelineno-1-43"></a><span class="s2">    emptyDir: {}</span>
+</span><span id="__span-1-44"><a id="__codelineno-1-44" name="__codelineno-1-44" href="#__codelineno-1-44"></a><span class="s2">&quot;&quot;&quot;</span>
+</span><span id="__span-1-45"><a id="__codelineno-1-45" name="__codelineno-1-45" href="#__codelineno-1-45"></a><span class="w">    </span><span class="o">}</span>
+</span><span id="__span-1-46"><a id="__codelineno-1-46" name="__codelineno-1-46" href="#__codelineno-1-46"></a><span class="w">  </span><span class="o">}</span>
+</span><span id="__span-1-47"><a id="__codelineno-1-47" name="__codelineno-1-47" href="#__codelineno-1-47"></a><span class="w">  </span><span class="n">stages</span><span class="w"> </span><span class="o">{</span>
+</span><span id="__span-1-48"><a id="__codelineno-1-48" name="__codelineno-1-48" href="#__codelineno-1-48"></a><span class="w">    </span><span class="n">stage</span><span class="o">(</span><span class="s1">&#39;Run maven&#39;</span><span class="o">)</span><span class="w"> </span><span class="o">{</span>
+</span><span id="__span-1-49"><a id="__codelineno-1-49" name="__codelineno-1-49" href="#__codelineno-1-49"></a><span class="w">      </span><span class="n">steps</span><span class="w"> </span><span class="o">{</span>
+</span><span id="__span-1-50"><a id="__codelineno-1-50" name="__codelineno-1-50" href="#__codelineno-1-50"></a><span class="w">        </span><span class="n">container</span><span class="o">(</span><span class="s1">&#39;maven&#39;</span><span class="o">)</span><span class="w"> </span><span class="o">{</span>
+</span><span id="__span-1-51"><a id="__codelineno-1-51" name="__codelineno-1-51" href="#__codelineno-1-51"></a><span class="w">          </span><span class="n">sh</span><span class="w"> </span><span class="s1">&#39;mvn clean deploy&#39;</span>
+</span><span id="__span-1-52"><a id="__codelineno-1-52" name="__codelineno-1-52" href="#__codelineno-1-52"></a><span class="w">        </span><span class="o">}</span>
+</span><span id="__span-1-53"><a id="__codelineno-1-53" name="__codelineno-1-53" href="#__codelineno-1-53"></a><span class="w">      </span><span class="o">}</span>
+</span><span id="__span-1-54"><a id="__codelineno-1-54" name="__codelineno-1-54" href="#__codelineno-1-54"></a><span class="w">    </span><span class="o">}</span>
+</span><span id="__span-1-55"><a id="__codelineno-1-55" name="__codelineno-1-55" href="#__codelineno-1-55"></a><span class="w">  </span><span class="o">}</span>
+</span><span id="__span-1-56"><a id="__codelineno-1-56" name="__codelineno-1-56" href="#__codelineno-1-56"></a><span class="o">}</span>
 </span></code></pre></div>
-<p>If you want to see in practice, have a look at some images we've defined to run in the cluster on this <a href="https://github.com/eclipse-cbi/dockerfiles">GitHub repository</a>.</p>
-<h1 id="my-build-fails-with-host-key-verification-failed-what-should-i-do">My build fails with "Host key verification failed", what should I do?</h1>
-<p>As long as you stay in the default <code>jnlp</code> docker image (i.e. use a Freestyle Job or a Pipeline job without a custom pod template), you'll benefit from our existing configuration where we mount a <code>known_hosts</code> file in the <code>~/.ssh</code> folder of all containers.</p>
-<p>If you define a custom pod template, you need to add some configuration to mount this <a href="https://kubernetes.io/docs/tasks/configure-pod-container/configure-pod-configmap/">config map</a> in your containers. The only thing that you have to know is the config map name <strong>known-hosts</strong> and mount it at the proper location <code>/home/jenkins/.ssh</code>. </p>
-<div class="language-groovy highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="n">pipeline</span><span class="w"> </span><span class="o">{</span>
-</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="w">  </span><span class="n">agent</span><span class="w"> </span><span class="o">{</span>
-</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="w">    </span><span class="n">kubernetes</span><span class="w"> </span><span class="o">{</span>
-</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="w">      </span><span class="n">label</span><span class="w"> </span><span class="s1">&#39;my-agent-pod&#39;</span>
-</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="w">      </span><span class="n">yaml</span><span class="w"> </span><span class="s2">&quot;&quot;&quot;</span>
-</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="s2">apiVersion: v1</span>
-</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="s2">kind: Pod</span>
-</span><span id="__span-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a><span class="s2">spec:</span>
-</span><span id="__span-2-9"><a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a><span class="s2">  containers:</span>
-</span><span id="__span-2-10"><a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a><span class="s2">  - name: maven</span>
-</span><span id="__span-2-11"><a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a><span class="s2">    image: maven:alpine</span>
-</span><span id="__span-2-12"><a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a><span class="s2">    command:</span>
-</span><span id="__span-2-13"><a id="__codelineno-2-13" name="__codelineno-2-13" href="#__codelineno-2-13"></a><span class="s2">    - cat</span>
-</span><span id="__span-2-14"><a id="__codelineno-2-14" name="__codelineno-2-14" href="#__codelineno-2-14"></a><span class="s2">    tty: true</span>
-</span><span id="__span-2-15"><a id="__codelineno-2-15" name="__codelineno-2-15" href="#__codelineno-2-15"></a><span class="s2">    volumeMounts:</span>
-</span><span id="__span-2-16"><a id="__codelineno-2-16" name="__codelineno-2-16" href="#__codelineno-2-16"></a><span class="s2">    - name: volume-known-hosts</span>
-</span><span id="__span-2-17"><a id="__codelineno-2-17" name="__codelineno-2-17" href="#__codelineno-2-17"></a><span class="s2">      mountPath: /home/jenkins/.ssh</span>
-</span><span id="__span-2-18"><a id="__codelineno-2-18" name="__codelineno-2-18" href="#__codelineno-2-18"></a><span class="s2">  volumes:</span>
-</span><span id="__span-2-19"><a id="__codelineno-2-19" name="__codelineno-2-19" href="#__codelineno-2-19"></a><span class="s2">  - name: volume-known-hosts</span>
-</span><span id="__span-2-20"><a id="__codelineno-2-20" name="__codelineno-2-20" href="#__codelineno-2-20"></a><span class="s2">    configMap:</span>
-</span><span id="__span-2-21"><a id="__codelineno-2-21" name="__codelineno-2-21" href="#__codelineno-2-21"></a><span class="s2">      name: known-hosts</span>
-</span><span id="__span-2-22"><a id="__codelineno-2-22" name="__codelineno-2-22" href="#__codelineno-2-22"></a><span class="s2">&quot;&quot;&quot;</span>
-</span><span id="__span-2-23"><a id="__codelineno-2-23" name="__codelineno-2-23" href="#__codelineno-2-23"></a><span class="w">    </span><span class="o">}</span>
-</span><span id="__span-2-24"><a id="__codelineno-2-24" name="__codelineno-2-24" href="#__codelineno-2-24"></a><span class="w">  </span><span class="o">}</span>
-</span><span id="__span-2-25"><a id="__codelineno-2-25" name="__codelineno-2-25" href="#__codelineno-2-25"></a><span class="w">  </span><span class="n">stages</span><span class="w"> </span><span class="o">{</span>
-</span><span id="__span-2-26"><a id="__codelineno-2-26" name="__codelineno-2-26" href="#__codelineno-2-26"></a><span class="w">    </span><span class="o">...</span>
-</span><span id="__span-2-27"><a id="__codelineno-2-27" name="__codelineno-2-27" href="#__codelineno-2-27"></a><span class="w">  </span><span class="o">}</span>
-</span><span id="__span-2-28"><a id="__codelineno-2-28" name="__codelineno-2-28" href="#__codelineno-2-28"></a><span class="o">}</span>
+<h2 id="how-can-artifacts-be-deployed-to-ossrh-maven-central">How can artifacts be deployed to OSSRH / Maven Central?</h2>
+<p>Deploying artifacts to OSSRH (OSS Repository Hosting provided by Sonatype) requires an account at OSSRH. It is also required to sign all artifacts with GPG. The Eclipse IT team will set this up for the project.<br/><br/>
+<strong>Please <a href="https://gitlab.eclipse.org/eclipsefdn/helpdesk/-/issues/new">open a HelpDesk issue</a> for this first.</strong></p>
+<blockquote>
+<p>[!NOTE]
+On our cluster-based infra (Jiro), a separate Maven settings file for deployment to OSSRH is not necessary. All information is contained in the default Maven settings file located at <code>/home/jenkins/.m2/settings.xml</code>, which does not need to be specified explicitly in your job configuration.<br> If you are using a custom container, please see <a href="https://github.com/eclipse-cbi/jiro/wiki/Nexus--%5C--OSSRH-%5C-Maven-Central/_edit#custom-container-on-jiro-2">Custom container on Jiro</a></p>
+</blockquote>
+<h3 id="required-steps-for-a-freestyle-job">Required steps for a freestyle job</h3>
+<table>
+<tr>
+<th>Steps</th>
+<th>Screenshots</th>
+</tr>
+<tr>
+<td>1. Insert <code>secret-subkeys.asc</code> as secret file in job </td>
+<td><img alt="Insert secret-subkeys.asc as secret file in job" src="https://github.com/user-attachments/assets/a745926c-28e4-4e4e-bffa-21fe377a831f"/></td>
+</tr>
+<tr>
+<td>2. Import GPG keyring with <code>--batch</code> and trust the keys non-interactively in a shell build step (before the Maven call)<br>
+
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>gpg<span class="w"> </span>--batch<span class="w"> </span>--import<span class="w"> </span><span class="s2">&quot;</span><span class="si">${</span><span class="nv">KEYRING</span><span class="si">}</span><span class="s2">&quot;</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="k">for</span><span class="w"> </span>fpr<span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="k">$(</span>gpg<span class="w"> </span>--list-keys<span class="w"> </span>--with-colons<span class="w">  </span><span class="p">|</span><span class="w"> </span>awk<span class="w"> </span>-F:<span class="w"> </span><span class="s1">&#39;/fpr:/ {print $10}&#39;</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>sort<span class="w"> </span>-u<span class="k">)</span><span class="p">;</span>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="k">do</span>
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="w">  </span><span class="nb">echo</span><span class="w"> </span>-e<span class="w"> </span><span class="s2">&quot;5\ny\n&quot;</span><span class="w"> </span><span class="p">|</span><span class="w">  </span>gpg<span class="w"> </span>--batch<span class="w"> </span>--command-fd<span class="w"> </span><span class="m">0</span><span class="w"> </span>--expert<span class="w"> </span>--edit-key<span class="w"> </span><span class="nv">$fpr</span><span class="w"> </span>trust<span class="p">;</span>
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="k">done</span>
 </span></code></pre></div>
-<p>Currently, the known_hosts file we provide has the host keys for the following sites:
-* git.eclipse.org:22
-* git.eclipse.org:29418
-* build.eclipse.org
-* github.com</p>
-<p>If you need any other site to be added, feel free to <a href="https://gitlab.eclipse.org/eclipsefdn/helpdesk/-/issues/new">open a HelpDesk issue</a>.</p>
-<h1 id="if-i-try-to-run-builds-on-the-jenkins-controller-master-node-they-never-start-what-is-wrong">If I try to run builds on the Jenkins controller (‘master’ node) they never start. What is wrong?</h1>
-<p>On our build cluster, all builds are executed on dynamic or static build agents. The master instance has no executors and therefore can not run any builds itself.</p>
-<p>In the case of pipeline jobs, it might appear as if the master is building, but it only handles the workflow of the tasks defined in the pipeline and post-build tasks, never the actual build steps.</p>
-<h1 id="my-build-is-sometime-taking-twice-as-long-to-complete-is-there-an-issue-with-the-cluster">My build is sometime taking twice as long to complete? Is there an issue with the cluster?</h1>
-<p>The first thing to do when you think that a build is slow, is to compare it with several others run over the course of a couple of days and relativize. We consider a single build being slow not only by comparing the average build time, but by taking into account the standard deviation of the build time history.</p>
-<p>You should keep in mind that when running on a clustered agent, CPU is always requested as an absolute quantity, never as a relative quantity; 0.1 is the same amount of CPU on a single-core, dual-core, or 48-core machine. Also, the CPU resources assigned to containers are absolute and not relative to the clock speed of the CPUs. On the cluster, we currently have some machines with 3.70GHz CPU cores and others with 2.00GHz CPU cores. So, depending on which node your jobs are schedule to run on, the ''performances may vary''. We will eventually streamline the machines on the cluster and reserve higher performance nodes for build jobs and keep lower performance ones for other tasks. </p>
-<h1 id="ive-updated-my-custom-image-and-reference-but-the-older-one-is-still-being-used-somehow">I've updated my custom image and reference, but the older one is still being used somehow.</h1>
-<p>This could be related to <a href="https://issues.jenkins-ci.org/browse/JENKINS-47759">JENKINS-47759</a> (See <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=565044">Bug 565044</a>)
-Instead of a pod label like <code>my-agent-pod</code>, consider using a label like <code>my-agent-pod + '-' + env.BUILD_NUMBER</code>.</p>
-<h1 id="where-is-my-build-workspace-i-see-error-no-workspace">Where is my build workspace? I see "Error: No workspace"</h1>
-<p>On our new cluster-based infrastructure, all builds run in dynamically created docker containers. After the build, the containers are destroyed and the workspace vanishes. </p>
-<p>Build artifacts can be archived (as before) by using the "archive artifacts" post-build action. If you need to access log files, etc. (for debugging purposes), you can archive them as well.</p>
-<p>We understand that this can be inconvenient, especially when debugging a failing build. One possible workaround is to use "sleep" in a shell build step (e.g. for 10 min) at the end, to be able to access the workspace after the build.</p>
+
+</td>
+<td><img alt="Import GPG keyring dialog" src="https://github.com/user-attachments/assets/05aa4cae-bd68-4e49-b3d7-6f58a37ca2dd"/></td>
+</tr>
+<tr>
+<td>3. If a newer GPG version (> 2.1+) is used, <code>--pinentry-mode loopback</code> needs to be added as GPG argument in the pom.xml.<br>
+
+<div class="language-xml highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="nt">&lt;plugin&gt;</span>
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="w">   </span><span class="nt">&lt;groupId&gt;</span>org.apache.maven.plugins<span class="nt">&lt;/groupId&gt;</span>
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="w">   </span><span class="nt">&lt;artifactId&gt;</span>maven-gpg-plugin<span class="nt">&lt;/artifactId&gt;</span>
+</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="w">   </span><span class="nt">&lt;version&gt;</span>1.6<span class="nt">&lt;/version&gt;</span>
+</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="w">   </span><span class="nt">&lt;executions&gt;</span>
+</span><span id="__span-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a><span class="w">     </span><span class="nt">&lt;execution&gt;</span>
+</span><span id="__span-3-7"><a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a><span class="w">       </span><span class="nt">&lt;id&gt;</span>sign-artifacts<span class="nt">&lt;/id&gt;</span>
+</span><span id="__span-3-8"><a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a><span class="w">         </span><span class="nt">&lt;phase&gt;</span>verify<span class="nt">&lt;/phase&gt;</span>
+</span><span id="__span-3-9"><a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a><span class="w">         </span><span class="nt">&lt;goals&gt;</span>
+</span><span id="__span-3-10"><a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a><span class="w">           </span><span class="nt">&lt;goal&gt;</span>sign<span class="nt">&lt;/goal&gt;</span>
+</span><span id="__span-3-11"><a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a><span class="w">         </span><span class="nt">&lt;/goals&gt;</span>
+</span><span id="__span-3-12"><a id="__codelineno-3-12" name="__codelineno-3-12" href="#__codelineno-3-12"></a><span class="w">         </span><span class="nt">&lt;configuration&gt;</span>
+</span><span id="__span-3-13"><a id="__codelineno-3-13" name="__codelineno-3-13" href="#__codelineno-3-13"></a><span class="w">           </span><span class="nt">&lt;gpgArguments&gt;</span>
+</span><span id="__span-3-14"><a id="__codelineno-3-14" name="__codelineno-3-14" href="#__codelineno-3-14"></a><span class="w">             </span><span class="nt">&lt;arg&gt;</span>--pinentry-mode<span class="nt">&lt;/arg&gt;</span>
+</span><span id="__span-3-15"><a id="__codelineno-3-15" name="__codelineno-3-15" href="#__codelineno-3-15"></a><span class="w">             </span><span class="nt">&lt;arg&gt;</span>loopback<span class="nt">&lt;/arg&gt;</span>
+</span><span id="__span-3-16"><a id="__codelineno-3-16" name="__codelineno-3-16" href="#__codelineno-3-16"></a><span class="w">           </span><span class="nt">&lt;/gpgArguments&gt;</span>
+</span><span id="__span-3-17"><a id="__codelineno-3-17" name="__codelineno-3-17" href="#__codelineno-3-17"></a><span class="w">         </span><span class="nt">&lt;/configuration&gt;</span>
+</span><span id="__span-3-18"><a id="__codelineno-3-18" name="__codelineno-3-18" href="#__codelineno-3-18"></a><span class="w">     </span><span class="nt">&lt;/execution&gt;</span>
+</span><span id="__span-3-19"><a id="__codelineno-3-19" name="__codelineno-3-19" href="#__codelineno-3-19"></a><span class="w">   </span><span class="nt">&lt;/executions&gt;</span>
+</span><span id="__span-3-20"><a id="__codelineno-3-20" name="__codelineno-3-20" href="#__codelineno-3-20"></a><span class="w"> </span><span class="nt">&lt;/plugin&gt;</span>
+</span></code></pre></div>
+
+</td>
+<td></td>
+</tr>
+</table>
+
+<h3 id="required-steps-for-a-pipeline-job">Required steps for a pipeline job</h3>
+<p>This is a simple pipeline job, that allows to test the GPG signing.</p>
+<div class="language-groovy highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="n">pipeline</span><span class="w"> </span><span class="o">{</span>
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="w">    </span><span class="n">agent</span><span class="w"> </span><span class="n">any</span>
+</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="w">    </span><span class="n">tools</span><span class="w"> </span><span class="o">{</span>
+</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="w">        </span><span class="n">maven</span><span class="w"> </span><span class="s1">&#39;apache-maven-latest&#39;</span>
+</span><span id="__span-4-5"><a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a><span class="w">        </span><span class="n">jdk</span><span class="w"> </span><span class="s1">&#39;openjdk-jdk17-latest&#39;</span>
+</span><span id="__span-4-6"><a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a><span class="w">    </span><span class="o">}</span>
+</span><span id="__span-4-7"><a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a><span class="w">    </span><span class="n">stages</span><span class="w"> </span><span class="o">{</span>
+</span><span id="__span-4-8"><a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a><span class="w">        </span><span class="n">stage</span><span class="o">(</span><span class="s1">&#39;Build&#39;</span><span class="o">)</span><span class="w"> </span><span class="o">{</span>
+</span><span id="__span-4-9"><a id="__codelineno-4-9" name="__codelineno-4-9" href="#__codelineno-4-9"></a><span class="w">            </span><span class="n">steps</span><span class="w"> </span><span class="o">{</span>
+</span><span id="__span-4-10"><a id="__codelineno-4-10" name="__codelineno-4-10" href="#__codelineno-4-10"></a><span class="w">                </span><span class="n">sh</span><span class="w"> </span><span class="s2">&quot;mvn -B -U archetype:generate -DgroupId=com.mycompany.app -DartifactId=my-app -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false&quot;</span>
+</span><span id="__span-4-11"><a id="__codelineno-4-11" name="__codelineno-4-11" href="#__codelineno-4-11"></a><span class="w">                </span><span class="n">sh</span><span class="w"> </span><span class="s1">&#39;&#39;&#39;cat &gt;my-app/pom.xml &lt;&lt;EOL</span>
+</span><span id="__span-4-12"><a id="__codelineno-4-12" name="__codelineno-4-12" href="#__codelineno-4-12"></a><span class="s1">&lt;project xmlns=&quot;http://maven.apache.org/POM/4.0.0&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;</span>
+</span><span id="__span-4-13"><a id="__codelineno-4-13" name="__codelineno-4-13" href="#__codelineno-4-13"></a><span class="s1">  xsi:schemaLocation=&quot;http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd&quot;&gt;</span>
+</span><span id="__span-4-14"><a id="__codelineno-4-14" name="__codelineno-4-14" href="#__codelineno-4-14"></a><span class="s1">  &lt;modelVersion&gt;4.0.0&lt;/modelVersion&gt;</span>
+</span><span id="__span-4-15"><a id="__codelineno-4-15" name="__codelineno-4-15" href="#__codelineno-4-15"></a><span class="s1">  &lt;groupId&gt;com.mycompany.app&lt;/groupId&gt;</span>
+</span><span id="__span-4-16"><a id="__codelineno-4-16" name="__codelineno-4-16" href="#__codelineno-4-16"></a><span class="s1">  &lt;artifactId&gt;my-app&lt;/artifactId&gt;</span>
+</span><span id="__span-4-17"><a id="__codelineno-4-17" name="__codelineno-4-17" href="#__codelineno-4-17"></a><span class="s1">  &lt;packaging&gt;jar&lt;/packaging&gt;</span>
+</span><span id="__span-4-18"><a id="__codelineno-4-18" name="__codelineno-4-18" href="#__codelineno-4-18"></a><span class="s1">  &lt;version&gt;1.0-SNAPSHOT&lt;/version&gt;</span>
+</span><span id="__span-4-19"><a id="__codelineno-4-19" name="__codelineno-4-19" href="#__codelineno-4-19"></a><span class="s1">  &lt;name&gt;my-app&lt;/name&gt;</span>
+</span><span id="__span-4-20"><a id="__codelineno-4-20" name="__codelineno-4-20" href="#__codelineno-4-20"></a><span class="s1">  &lt;url&gt;http://maven.apache.org&lt;/url&gt;</span>
+</span><span id="__span-4-21"><a id="__codelineno-4-21" name="__codelineno-4-21" href="#__codelineno-4-21"></a><span class="s1">  &lt;dependencies&gt;</span>
+</span><span id="__span-4-22"><a id="__codelineno-4-22" name="__codelineno-4-22" href="#__codelineno-4-22"></a><span class="s1">    &lt;dependency&gt;</span>
+</span><span id="__span-4-23"><a id="__codelineno-4-23" name="__codelineno-4-23" href="#__codelineno-4-23"></a><span class="s1">      &lt;groupId&gt;junit&lt;/groupId&gt;</span>
+</span><span id="__span-4-24"><a id="__codelineno-4-24" name="__codelineno-4-24" href="#__codelineno-4-24"></a><span class="s1">      &lt;artifactId&gt;junit&lt;/artifactId&gt;</span>
+</span><span id="__span-4-25"><a id="__codelineno-4-25" name="__codelineno-4-25" href="#__codelineno-4-25"></a><span class="s1">      &lt;version&gt;3.8.1&lt;/version&gt;</span>
+</span><span id="__span-4-26"><a id="__codelineno-4-26" name="__codelineno-4-26" href="#__codelineno-4-26"></a><span class="s1">      &lt;scope&gt;test&lt;/scope&gt;</span>
+</span><span id="__span-4-27"><a id="__codelineno-4-27" name="__codelineno-4-27" href="#__codelineno-4-27"></a><span class="s1">    &lt;/dependency&gt;</span>
+</span><span id="__span-4-28"><a id="__codelineno-4-28" name="__codelineno-4-28" href="#__codelineno-4-28"></a><span class="s1">  &lt;/dependencies&gt;</span>
+</span><span id="__span-4-29"><a id="__codelineno-4-29" name="__codelineno-4-29" href="#__codelineno-4-29"></a><span class="s1">  &lt;build&gt;</span>
+</span><span id="__span-4-30"><a id="__codelineno-4-30" name="__codelineno-4-30" href="#__codelineno-4-30"></a><span class="s1">    &lt;plugins&gt;</span>
+</span><span id="__span-4-31"><a id="__codelineno-4-31" name="__codelineno-4-31" href="#__codelineno-4-31"></a><span class="s1">      &lt;plugin&gt;</span>
+</span><span id="__span-4-32"><a id="__codelineno-4-32" name="__codelineno-4-32" href="#__codelineno-4-32"></a><span class="s1">        &lt;groupId&gt;org.apache.maven.plugins&lt;/groupId&gt;</span>
+</span><span id="__span-4-33"><a id="__codelineno-4-33" name="__codelineno-4-33" href="#__codelineno-4-33"></a><span class="s1">        &lt;artifactId&gt;maven-gpg-plugin&lt;/artifactId&gt;</span>
+</span><span id="__span-4-34"><a id="__codelineno-4-34" name="__codelineno-4-34" href="#__codelineno-4-34"></a><span class="s1">        &lt;version&gt;1.6&lt;/version&gt;</span>
+</span><span id="__span-4-35"><a id="__codelineno-4-35" name="__codelineno-4-35" href="#__codelineno-4-35"></a><span class="s1">        &lt;executions&gt;</span>
+</span><span id="__span-4-36"><a id="__codelineno-4-36" name="__codelineno-4-36" href="#__codelineno-4-36"></a><span class="s1">          &lt;execution&gt;</span>
+</span><span id="__span-4-37"><a id="__codelineno-4-37" name="__codelineno-4-37" href="#__codelineno-4-37"></a><span class="s1">            &lt;id&gt;sign-artifacts&lt;/id&gt;</span>
+</span><span id="__span-4-38"><a id="__codelineno-4-38" name="__codelineno-4-38" href="#__codelineno-4-38"></a><span class="s1">            &lt;phase&gt;verify&lt;/phase&gt;</span>
+</span><span id="__span-4-39"><a id="__codelineno-4-39" name="__codelineno-4-39" href="#__codelineno-4-39"></a><span class="s1">            &lt;goals&gt;</span>
+</span><span id="__span-4-40"><a id="__codelineno-4-40" name="__codelineno-4-40" href="#__codelineno-4-40"></a><span class="s1">              &lt;goal&gt;sign&lt;/goal&gt;</span>
+</span><span id="__span-4-41"><a id="__codelineno-4-41" name="__codelineno-4-41" href="#__codelineno-4-41"></a><span class="s1">            &lt;/goals&gt;</span>
+</span><span id="__span-4-42"><a id="__codelineno-4-42" name="__codelineno-4-42" href="#__codelineno-4-42"></a><span class="s1">            &lt;configuration&gt;</span>
+</span><span id="__span-4-43"><a id="__codelineno-4-43" name="__codelineno-4-43" href="#__codelineno-4-43"></a><span class="s1">              &lt;gpgArguments&gt;</span>
+</span><span id="__span-4-44"><a id="__codelineno-4-44" name="__codelineno-4-44" href="#__codelineno-4-44"></a><span class="s1">                &lt;arg&gt;--pinentry-mode&lt;/arg&gt;</span>
+</span><span id="__span-4-45"><a id="__codelineno-4-45" name="__codelineno-4-45" href="#__codelineno-4-45"></a><span class="s1">                &lt;arg&gt;loopback&lt;/arg&gt;</span>
+</span><span id="__span-4-46"><a id="__codelineno-4-46" name="__codelineno-4-46" href="#__codelineno-4-46"></a><span class="s1">              &lt;/gpgArguments&gt;</span>
+</span><span id="__span-4-47"><a id="__codelineno-4-47" name="__codelineno-4-47" href="#__codelineno-4-47"></a><span class="s1">            &lt;/configuration&gt;</span>
+</span><span id="__span-4-48"><a id="__codelineno-4-48" name="__codelineno-4-48" href="#__codelineno-4-48"></a><span class="s1">          &lt;/execution&gt;</span>
+</span><span id="__span-4-49"><a id="__codelineno-4-49" name="__codelineno-4-49" href="#__codelineno-4-49"></a><span class="s1">        &lt;/executions&gt;</span>
+</span><span id="__span-4-50"><a id="__codelineno-4-50" name="__codelineno-4-50" href="#__codelineno-4-50"></a><span class="s1">      &lt;/plugin&gt;</span>
+</span><span id="__span-4-51"><a id="__codelineno-4-51" name="__codelineno-4-51" href="#__codelineno-4-51"></a><span class="s1">    &lt;/plugins&gt;</span>
+</span><span id="__span-4-52"><a id="__codelineno-4-52" name="__codelineno-4-52" href="#__codelineno-4-52"></a><span class="s1">  &lt;/build&gt;</span>
+</span><span id="__span-4-53"><a id="__codelineno-4-53" name="__codelineno-4-53" href="#__codelineno-4-53"></a><span class="s1">&lt;/project&gt;</span>
+</span><span id="__span-4-54"><a id="__codelineno-4-54" name="__codelineno-4-54" href="#__codelineno-4-54"></a><span class="s1">EOL&#39;&#39;&#39;</span>
+</span><span id="__span-4-55"><a id="__codelineno-4-55" name="__codelineno-4-55" href="#__codelineno-4-55"></a><span class="w">                </span><span class="n">withCredentials</span><span class="o">([</span><span class="n">file</span><span class="o">(</span><span class="nl">credentialsId:</span><span class="w"> </span><span class="s1">&#39;secret-subkeys.asc&#39;</span><span class="o">,</span><span class="w"> </span><span class="nl">variable:</span><span class="w"> </span><span class="s1">&#39;KEYRING&#39;</span><span class="o">)])</span><span class="w"> </span><span class="o">{</span>
+</span><span id="__span-4-56"><a id="__codelineno-4-56" name="__codelineno-4-56" href="#__codelineno-4-56"></a><span class="w">                    </span><span class="n">sh</span><span class="w"> </span><span class="s1">&#39;gpg --batch --import &quot;${KEYRING}&quot;&#39;</span>
+</span><span id="__span-4-57"><a id="__codelineno-4-57" name="__codelineno-4-57" href="#__codelineno-4-57"></a><span class="w">                    </span><span class="n">sh</span><span class="w"> </span><span class="s1">&#39;for fpr in $(gpg --list-keys --with-colons  | awk -F: \&#39;/fpr:/ {print $10}\&#39; | sort -u); do echo -e &quot;5\ny\n&quot; |  gpg --batch --command-fd 0 --expert --edit-key ${fpr} trust; done&#39;</span>
+</span><span id="__span-4-58"><a id="__codelineno-4-58" name="__codelineno-4-58" href="#__codelineno-4-58"></a><span class="w">                </span><span class="o">}</span>
+</span><span id="__span-4-59"><a id="__codelineno-4-59" name="__codelineno-4-59" href="#__codelineno-4-59"></a><span class="w">                </span><span class="n">sh</span><span class="w"> </span><span class="s2">&quot;mvn -B -f my-app/pom.xml clean verify&quot;</span>
+</span><span id="__span-4-60"><a id="__codelineno-4-60" name="__codelineno-4-60" href="#__codelineno-4-60"></a><span class="w">                </span><span class="n">sh</span><span class="w"> </span><span class="s1">&#39;gpg --verify my-app/target/my-app-1.0-SNAPSHOT.jar.asc&#39;</span>
+</span><span id="__span-4-61"><a id="__codelineno-4-61" name="__codelineno-4-61" href="#__codelineno-4-61"></a><span class="w">            </span><span class="o">}</span>
+</span><span id="__span-4-62"><a id="__codelineno-4-62" name="__codelineno-4-62" href="#__codelineno-4-62"></a><span class="w">        </span><span class="o">}</span>
+</span><span id="__span-4-63"><a id="__codelineno-4-63" name="__codelineno-4-63" href="#__codelineno-4-63"></a><span class="w">    </span><span class="o">}</span>
+</span><span id="__span-4-64"><a id="__codelineno-4-64" name="__codelineno-4-64" href="#__codelineno-4-64"></a><span class="o">}</span>
+</span></code></pre></div>
+<h3 id="custom-container-on-jiro_2">Custom container on Jiro</h3>
+<p>When you are using a custom container on Jiro, you will need to add the <code>settings-xml</code> and <code>settings-security-xml</code> volumes, as shown below.</p>
+<p><strong>Please note:</strong>
+* the m2-repo volume is required as well, otherwise<code>/home/jenkins/.m2/repository</code> is not writable
+* the <code>toolchains-xml</code> volume is optional, but added for completeness
+* you also might need to add additional volumes like <code>volume-known-hosts</code> (as described here: <a href="https://github.com/eclipse-cbi/jiro/wiki/FAQ#pipeline-job-with-custom-pod-template">Pipeline job with custom pod template</a>)</p>
+<div class="language-groovy highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="n">pipeline</span><span class="w"> </span><span class="o">{</span>
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="w">  </span><span class="n">agent</span><span class="w"> </span><span class="o">{</span>
+</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="w">    </span><span class="n">kubernetes</span><span class="w"> </span><span class="o">{</span>
+</span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="w">      </span><span class="n">label</span><span class="w"> </span><span class="s1">&#39;my-agent-pod&#39;</span>
+</span><span id="__span-5-5"><a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a><span class="w">      </span><span class="n">yaml</span><span class="w"> </span><span class="s2">&quot;&quot;&quot;</span>
+</span><span id="__span-5-6"><a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a><span class="s2">apiVersion: v1</span>
+</span><span id="__span-5-7"><a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a><span class="s2">kind: Pod</span>
+</span><span id="__span-5-8"><a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a><span class="s2">spec:</span>
+</span><span id="__span-5-9"><a id="__codelineno-5-9" name="__codelineno-5-9" href="#__codelineno-5-9"></a><span class="s2">  containers:</span>
+</span><span id="__span-5-10"><a id="__codelineno-5-10" name="__codelineno-5-10" href="#__codelineno-5-10"></a><span class="s2">  - name: maven</span>
+</span><span id="__span-5-11"><a id="__codelineno-5-11" name="__codelineno-5-11" href="#__codelineno-5-11"></a><span class="s2">    image: maven:alpine</span>
+</span><span id="__span-5-12"><a id="__codelineno-5-12" name="__codelineno-5-12" href="#__codelineno-5-12"></a><span class="s2">    tty: true</span>
+</span><span id="__span-5-13"><a id="__codelineno-5-13" name="__codelineno-5-13" href="#__codelineno-5-13"></a><span class="s2">    command:</span>
+</span><span id="__span-5-14"><a id="__codelineno-5-14" name="__codelineno-5-14" href="#__codelineno-5-14"></a><span class="s2">    - cat</span>
+</span><span id="__span-5-15"><a id="__codelineno-5-15" name="__codelineno-5-15" href="#__codelineno-5-15"></a><span class="s2">    volumeMounts:</span>
+</span><span id="__span-5-16"><a id="__codelineno-5-16" name="__codelineno-5-16" href="#__codelineno-5-16"></a><span class="s2">    - name: settings-xml</span>
+</span><span id="__span-5-17"><a id="__codelineno-5-17" name="__codelineno-5-17" href="#__codelineno-5-17"></a><span class="s2">      mountPath: /home/jenkins/.m2/settings.xml</span>
+</span><span id="__span-5-18"><a id="__codelineno-5-18" name="__codelineno-5-18" href="#__codelineno-5-18"></a><span class="s2">      subPath: settings.xml</span>
+</span><span id="__span-5-19"><a id="__codelineno-5-19" name="__codelineno-5-19" href="#__codelineno-5-19"></a><span class="s2">      readOnly: true</span>
+</span><span id="__span-5-20"><a id="__codelineno-5-20" name="__codelineno-5-20" href="#__codelineno-5-20"></a><span class="s2">    - name: toolchains-xml</span>
+</span><span id="__span-5-21"><a id="__codelineno-5-21" name="__codelineno-5-21" href="#__codelineno-5-21"></a><span class="s2">      mountPath: /home/jenkins/.m2/toolchains.xml</span>
+</span><span id="__span-5-22"><a id="__codelineno-5-22" name="__codelineno-5-22" href="#__codelineno-5-22"></a><span class="s2">      subPath: toolchains.xml</span>
+</span><span id="__span-5-23"><a id="__codelineno-5-23" name="__codelineno-5-23" href="#__codelineno-5-23"></a><span class="s2">      readOnly: true</span>
+</span><span id="__span-5-24"><a id="__codelineno-5-24" name="__codelineno-5-24" href="#__codelineno-5-24"></a><span class="s2">    - name: settings-security-xml</span>
+</span><span id="__span-5-25"><a id="__codelineno-5-25" name="__codelineno-5-25" href="#__codelineno-5-25"></a><span class="s2">      mountPath: /home/jenkins/.m2/settings-security.xml</span>
+</span><span id="__span-5-26"><a id="__codelineno-5-26" name="__codelineno-5-26" href="#__codelineno-5-26"></a><span class="s2">      subPath: settings-security.xml</span>
+</span><span id="__span-5-27"><a id="__codelineno-5-27" name="__codelineno-5-27" href="#__codelineno-5-27"></a><span class="s2">      readOnly: true</span>
+</span><span id="__span-5-28"><a id="__codelineno-5-28" name="__codelineno-5-28" href="#__codelineno-5-28"></a><span class="s2">    - name: m2-repo</span>
+</span><span id="__span-5-29"><a id="__codelineno-5-29" name="__codelineno-5-29" href="#__codelineno-5-29"></a><span class="s2">      mountPath: /home/jenkins/.m2/repository</span>
+</span><span id="__span-5-30"><a id="__codelineno-5-30" name="__codelineno-5-30" href="#__codelineno-5-30"></a><span class="s2">  volumes:</span>
+</span><span id="__span-5-31"><a id="__codelineno-5-31" name="__codelineno-5-31" href="#__codelineno-5-31"></a><span class="s2">  - name: settings-xml</span>
+</span><span id="__span-5-32"><a id="__codelineno-5-32" name="__codelineno-5-32" href="#__codelineno-5-32"></a><span class="s2">    secret:</span>
+</span><span id="__span-5-33"><a id="__codelineno-5-33" name="__codelineno-5-33" href="#__codelineno-5-33"></a><span class="s2">      secretName: m2-secret-dir</span>
+</span><span id="__span-5-34"><a id="__codelineno-5-34" name="__codelineno-5-34" href="#__codelineno-5-34"></a><span class="s2">      items:</span>
+</span><span id="__span-5-35"><a id="__codelineno-5-35" name="__codelineno-5-35" href="#__codelineno-5-35"></a><span class="s2">      - key: settings.xml</span>
+</span><span id="__span-5-36"><a id="__codelineno-5-36" name="__codelineno-5-36" href="#__codelineno-5-36"></a><span class="s2">        path: settings.xml</span>
+</span><span id="__span-5-37"><a id="__codelineno-5-37" name="__codelineno-5-37" href="#__codelineno-5-37"></a><span class="s2">  - name: toolchains-xml</span>
+</span><span id="__span-5-38"><a id="__codelineno-5-38" name="__codelineno-5-38" href="#__codelineno-5-38"></a><span class="s2">    configMap:</span>
+</span><span id="__span-5-39"><a id="__codelineno-5-39" name="__codelineno-5-39" href="#__codelineno-5-39"></a><span class="s2">      name: m2-dir</span>
+</span><span id="__span-5-40"><a id="__codelineno-5-40" name="__codelineno-5-40" href="#__codelineno-5-40"></a><span class="s2">      items:</span>
+</span><span id="__span-5-41"><a id="__codelineno-5-41" name="__codelineno-5-41" href="#__codelineno-5-41"></a><span class="s2">      - key: toolchains.xml</span>
+</span><span id="__span-5-42"><a id="__codelineno-5-42" name="__codelineno-5-42" href="#__codelineno-5-42"></a><span class="s2">        path: toolchains.xml</span>
+</span><span id="__span-5-43"><a id="__codelineno-5-43" name="__codelineno-5-43" href="#__codelineno-5-43"></a><span class="s2">  - name: settings-security-xml</span>
+</span><span id="__span-5-44"><a id="__codelineno-5-44" name="__codelineno-5-44" href="#__codelineno-5-44"></a><span class="s2">    secret:</span>
+</span><span id="__span-5-45"><a id="__codelineno-5-45" name="__codelineno-5-45" href="#__codelineno-5-45"></a><span class="s2">      secretName: m2-secret-dir</span>
+</span><span id="__span-5-46"><a id="__codelineno-5-46" name="__codelineno-5-46" href="#__codelineno-5-46"></a><span class="s2">      items:</span>
+</span><span id="__span-5-47"><a id="__codelineno-5-47" name="__codelineno-5-47" href="#__codelineno-5-47"></a><span class="s2">      - key: settings-security.xml</span>
+</span><span id="__span-5-48"><a id="__codelineno-5-48" name="__codelineno-5-48" href="#__codelineno-5-48"></a><span class="s2">        path: settings-security.xml</span>
+</span><span id="__span-5-49"><a id="__codelineno-5-49" name="__codelineno-5-49" href="#__codelineno-5-49"></a><span class="s2">  - name: m2-repo</span>
+</span><span id="__span-5-50"><a id="__codelineno-5-50" name="__codelineno-5-50" href="#__codelineno-5-50"></a><span class="s2">    emptyDir: {}</span>
+</span><span id="__span-5-51"><a id="__codelineno-5-51" name="__codelineno-5-51" href="#__codelineno-5-51"></a><span class="s2">&quot;&quot;&quot;</span>
+</span><span id="__span-5-52"><a id="__codelineno-5-52" name="__codelineno-5-52" href="#__codelineno-5-52"></a><span class="w">    </span><span class="o">}</span>
+</span><span id="__span-5-53"><a id="__codelineno-5-53" name="__codelineno-5-53" href="#__codelineno-5-53"></a><span class="w">  </span><span class="o">}</span>
+</span><span id="__span-5-54"><a id="__codelineno-5-54" name="__codelineno-5-54" href="#__codelineno-5-54"></a><span class="w">  </span><span class="n">stages</span><span class="w"> </span><span class="o">{</span>
+</span><span id="__span-5-55"><a id="__codelineno-5-55" name="__codelineno-5-55" href="#__codelineno-5-55"></a><span class="w">    </span><span class="n">stage</span><span class="o">(</span><span class="s1">&#39;Run maven&#39;</span><span class="o">)</span><span class="w"> </span><span class="o">{</span>
+</span><span id="__span-5-56"><a id="__codelineno-5-56" name="__codelineno-5-56" href="#__codelineno-5-56"></a><span class="w">      </span><span class="n">steps</span><span class="w"> </span><span class="o">{</span>
+</span><span id="__span-5-57"><a id="__codelineno-5-57" name="__codelineno-5-57" href="#__codelineno-5-57"></a><span class="w">        </span><span class="n">container</span><span class="o">(</span><span class="s1">&#39;maven&#39;</span><span class="o">)</span><span class="w"> </span><span class="o">{</span>
+</span><span id="__span-5-58"><a id="__codelineno-5-58" name="__codelineno-5-58" href="#__codelineno-5-58"></a><span class="w">          </span><span class="n">sh</span><span class="w"> </span><span class="s1">&#39;mvn -version&#39;</span>
+</span><span id="__span-5-59"><a id="__codelineno-5-59" name="__codelineno-5-59" href="#__codelineno-5-59"></a><span class="w">        </span><span class="o">}</span>
+</span><span id="__span-5-60"><a id="__codelineno-5-60" name="__codelineno-5-60" href="#__codelineno-5-60"></a><span class="w">      </span><span class="o">}</span>
+</span><span id="__span-5-61"><a id="__codelineno-5-61" name="__codelineno-5-61" href="#__codelineno-5-61"></a><span class="w">    </span><span class="o">}</span>
+</span><span id="__span-5-62"><a id="__codelineno-5-62" name="__codelineno-5-62" href="#__codelineno-5-62"></a><span class="w">  </span><span class="o">}</span>
+</span><span id="__span-5-63"><a id="__codelineno-5-63" name="__codelineno-5-63" href="#__codelineno-5-63"></a><span class="o">}</span>
+</span></code></pre></div>
+<h3 id="common-issues-with-gpg">Common issues with GPG</h3>
+<table>
+<thead>
+<tr>
+<th>Error message</th>
+<th>Solution</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>gpg: signing failed: Not a tty</code></td>
+<td>GPG version &gt; 2.1 is used and <code>--pinentry-mode loopback</code> needs to be <strong>added</strong> to the maven-gpg-plugin config in the pom.xml (see above).</td>
+</tr>
+<tr>
+<td><code>gpg: invalid option "--pinentry-mode"</code></td>
+<td>GPG version &lt; 2.1 is used and <code>--pinentry-mode loopback</code> needs to be <strong>removed</strong> from the maven-gpg-plugin config in the pom.xml</td>
+</tr>
+<tr>
+<td><code>gpg: no default secret key: No secret key</code> or <br/> <code>gpg: signing failed: No secret key</code></td>
+<td>GPG keyring needs to be imported (see above)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="signing-with-gradle">Signing with Gradle</h3>
+<p>To sign artifacts with Gradle, the following needs to be done:</p>
+<ol>
+<li>Import the GPG Keyring as described above</li>
+<li>Add the GPG Passphrase to the build with a secret binding (type: secret text, variable: PASSPHRASE). Please <a href="https://gitlab.eclipse.org/eclipsefdn/helpdesk/-/issues">file a ticket</a> to get the passphrase added to the Jenkins instance.</li>
+<li>
+<p>Use <code>GnupgSignatory</code> by calling <code>useGpgCmd()</code> in the signing task
+   <div class="language-text highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>signing {
+</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>    useGpgCmd()
+</span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a>    sign &lt;something&gt;
+</span><span id="__span-6-4"><a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a>}
+</span></code></pre></div></p>
+</li>
+<li>
+<p>Use pinentry-mode loopback and no-tty config properties by appending it to <code>~/.gnupg/gpg.conf</code></p>
+</li>
+<li>Call Gradle with the following parameters:<ul>
+<li><code>-Psigning.gnupg.keyId=&lt;key_id&gt;</code></li>
+<li><code>-Psigning.gnupg.passphrase=${PASSPHRASE}</code></li>
+<li><code>-Psigning.gnupg.executable=gpg</code></li>
+</ul>
+</li>
+</ol>
+<p>See also: https://docs.gradle.org/current/userguide/signing_plugin.html#sec:using_gpg_agent </p>
+<h2 id="how-can-artifacts-be-released-from-ossrh-to-maven-central">How can artifacts be released from OSSRH to Maven Central?</h2>
+<p>There are different ways of "releasing" from OSSRH to Maven Central.</p>
+<ul>
+<li>a) you can create an OSSRH account (https://issues.sonatype.org/secure/Signup!default.jspa) and ask for permissions for your user on the JIRA issue that was created when your project requested access to OSSRH. With the given permissions you can access the Nexus UI at oss.sonatype.org and release via the UI.</li>
+<li>b) you can release "headless" (e.g. with a build job) via the nexus-staging-maven-plugin (see https://github.com/sonatype/nexus-maven-plugins/tree/main/staging/maven-plugin#release, see also the rc-* CLI commands)</li>
+<li>c) with the Gradle Nexus Publish Plugin: https://github.com/gradle-nexus/publish-plugin/</li>
+</ul>
+<p>See also: https://central.sonatype.org/publish/release/#locate-and-examine-your-staging-repository </p>
 
 
 
@@ -3655,7 +4131,7 @@ Instead of a pod label like <code>my-agent-pod</code>, consider using a label li
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../CI-Best-Practices/" class="md-footer__link md-footer__link--prev" aria-label="Previous: CI Best Practices">
+          <a href="../GitLab-integration/" class="md-footer__link md-footer__link--prev" aria-label="Previous: GitLab integration">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -3665,20 +4141,20 @@ Instead of a pod label like <code>my-agent-pod</code>, consider using a label li
                 Previous
               </span>
               <div class="md-ellipsis">
-                CI Best Practices
+                GitLab integration
               </div>
             </div>
           </a>
         
         
           
-          <a href="../Dedicated-build-agents/" class="md-footer__link md-footer__link--next" aria-label="Next: Dedicated build agents">
+          <a href="../Resource-packs-and-quotas/" class="md-footer__link md-footer__link--next" aria-label="Next: Resource packs and quotas">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Dedicated build agents
+                Resource packs and quotas
               </div>
             </div>
             <div class="md-footer__button md-icon">
